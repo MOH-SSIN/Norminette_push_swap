@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "algorithm": "c",
+        "checker.h": "c",
+        "push_swap.h": "c",
+        "libft.h": "c"
+    }
+}

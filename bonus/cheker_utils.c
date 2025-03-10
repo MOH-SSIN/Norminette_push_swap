@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cheker_utils.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 18:16:44 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:34:15 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/10 16:25:40 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,7 @@ t_noeud	*ft_check_creat(t_noeud **a, char **args)
 	nombre = 0;
 	i = 0;
 	if (!args || !args[i])
-	{
-		printf("hh\n");
 		liberer_erreurs_bonus(args);
-	}
 	while (args[i])
 	{
 		if (verifier_syntaxe_bonus(args[i]) == 1)

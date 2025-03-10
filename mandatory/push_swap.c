@@ -3,27 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 14:30:11 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:40:53 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/10 15:45:43 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	main(int argc, char **argv)
+void	ft_push_swap(int argc, char **argv)
 {
+	char	**args;
 	t_noeud	*a;
 	t_noeud	*b;
+
+	a = NULL;
+	b = NULL;
+	args = concat_arg(argc, argv);
+	parse_arg_end_init_a(&a, &b, args);
+	free_piles(a, b);
+}
+
+int	main(int argc, char **argv)
+{
 	int		i;
-	char	**args;
 
 	if (argc < 2)
 		return (0);
 	i = 0;
-	a = NULL;
-	b = NULL;
 	if (argc < 2)
 		return (0);
 	else
@@ -37,8 +45,6 @@ int	main(int argc, char **argv)
 			}
 		}
 	}
-	args = concat_arg(argc, argv);
-	parse_arg_end_init_a(&a, &b, args);
-	free_piles(a, b);
+	ft_push_swap(argc, argv);
 	return (0);
 }

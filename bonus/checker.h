@@ -13,8 +13,8 @@
 #ifndef CHECKER_H
 # define CHECKER_H
 
-# include "../libft/libft.h"
 # include "../commun/commun.h"
+# include "../libft/libft.h"
 # include "limits.h"
 # include "stdbool.h"
 # include "stdlib.h"

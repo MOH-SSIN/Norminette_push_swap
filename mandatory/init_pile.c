@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_pile.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:05 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/11 09:44:20 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 10:13:51 by idahhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,26 +57,25 @@ void	set_abov_medlan(t_noeud *list)
 	}
 }
 
-
-static void    set_push_price(t_noeud *a, t_noeud *b)
+static void	set_push_price(t_noeud *a, t_noeud *b)
 {
-    int len_a;
-    int len_b;
+	int	len_a;
+	int	len_b;
 
-    len_a = pile_taile(a);
-    len_b = pile_taile(b);
-    while (b)
-    {
-        b->push_price = b->indice;
-        if (!b->au_dessus_median)
-            b->push_price = len_b - b->indice;
-        if (b->noeud_cible->au_dessus_median)
-            b->push_price += b->noeud_cible->indice;
-        else
-            b->push_price += len_a - b->noeud_cible->indice;
-        mohcine(&b, len_a, len_b);
-        b = b->suivant;
-    }
+	len_a = pile_taile(a);
+	len_b = pile_taile(b);
+	while (b)
+	{
+		b->push_price = b->indice;
+		if (!b->au_dessus_median)
+			b->push_price = len_b - b->indice;
+		if (b->noeud_cible->au_dessus_median)
+			b->push_price += b->noeud_cible->indice;
+		else
+			b->push_price += len_a - b->noeud_cible->indice;
+		mohcine(&b, len_a, len_b);
+		b = b->suivant;
+	}
 }
 
 static void	set_cheapest(t_noeud *b)

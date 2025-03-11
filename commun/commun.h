@@ -11,14 +11,13 @@
 /* ************************************************************************** */
 
 #ifndef COMMUN_H
-#define COMMUN_H
+# define COMMUN_H
 
-
+# include "../libft/libft.h"
 # include "limits.h"
 # include "stdbool.h"
 # include "stdlib.h"
 # include "unistd.h"
-# include "../libft/libft.h"
 
 typedef struct s_noeud
 {
@@ -36,11 +35,11 @@ typedef struct s_noeud
 	struct s_noeud	*precedent;
 }					t_noeud;
 
-int ft_vide_space(char *str);
-int pile_trie(t_noeud *a);
+int					ft_vide_space(char *str);
+int					pile_trie(t_noeud *a);
 
-char    **concat_arg(int ac, char *av[]);
-void    free_pile(t_noeud *pile);
+char				**concat_arg(int ac, char *av[]);
+void				free_pile(t_noeud *pile);
 void				free_piles(t_noeud *a, t_noeud *b);
 
 void				sa(t_noeud **a, bool afch);
@@ -59,8 +58,8 @@ void				pa(t_noeud **a, t_noeud **b, bool afch);
 void				pb(t_noeud **a, t_noeud **b, bool afch);
 
 void				mohcine(t_noeud **b, int len_a, int len_b);
-t_noeud *ajouter_noeud(char **args, bool droit, bool run_lis);
-void	set_index(t_noeud *pile);
+t_noeud				*ajouter_noeud(char **args, bool droit, bool run_lis);
+void				set_index(t_noeud *pile);
 void				fr_single(char **s1, char **s2);
 void				ft_lis(t_noeud **a);
 void				liberer_erreurs(char **split);

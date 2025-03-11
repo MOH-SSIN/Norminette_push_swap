@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   lis.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:09 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:31:51 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/11 09:45:33 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "commun.h"
 
 static t_noeud	*ft_get_max_noeud_length(t_noeud *a)
 {

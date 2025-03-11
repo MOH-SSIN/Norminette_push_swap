@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:08:37 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:28:05 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/11 09:43:18 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "../commun/commun.h"
 
 static void	swap(t_noeud **pile)
 {

@@ -6,11 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:27 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 15:51:01 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:44:27 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 int	pile_taile(t_noeud *a)
 {

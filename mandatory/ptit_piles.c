@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ptit_piles.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:20 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:40:32 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/11 09:44:24 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 static void	trier_trois(t_noeud **a)
 {

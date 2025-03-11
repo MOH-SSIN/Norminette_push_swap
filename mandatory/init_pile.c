@@ -6,11 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:05 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 15:50:27 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:44:20 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 static void	set_target_node(t_noeud *a, t_noeud *b) // sup
 {

@@ -1,8 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   commun.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/11 10:03:07 by mez-zahi          #+#    #+#             */
+/*   Updated: 2025/03/11 10:03:08 by mez-zahi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef COMMUN_H
 #define COMMUN_H
 
 
+# include "limits.h"
 # include "stdbool.h"
+# include "stdlib.h"
+# include "unistd.h"
+# include "../libft/libft.h"
 
 typedef struct s_noeud
 {
@@ -44,5 +60,9 @@ void				pb(t_noeud **a, t_noeud **b, bool afch);
 
 void				mohcine(t_noeud **b, int len_a, int len_b);
 t_noeud *ajouter_noeud(char **args, bool droit, bool run_lis);
+void	set_index(t_noeud *pile);
+void				fr_single(char **s1, char **s2);
+void				ft_lis(t_noeud **a);
+void				liberer_erreurs(char **split);
 
 #endif

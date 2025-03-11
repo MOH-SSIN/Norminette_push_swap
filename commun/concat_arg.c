@@ -6,11 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 19:31:52 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 15:41:38 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:45:20 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "commun.h"
 
 char	*concat_arguments(int ac, char *av[])
 {

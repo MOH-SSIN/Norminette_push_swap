@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 14:30:09 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 16:30:27 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:48:56 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # include "stdbool.h"
 # include "stdlib.h"
 # include "unistd.h"
-#include "commun/commun.h"
+#include "../commun/commun.h"
+# include "../libft/libft.h"
 
 
 char				**concat_arg(int ac, char *av[]);
@@ -46,15 +47,10 @@ int					pile_trie(t_noeud *a);
 int					pile_trie_enreverse(t_noeud *a);
 t_noeud				*ft_grand_element(t_noeud *a);
 
-void				fr_single(char **s1, char **s2);
-void				liberer_erreurs(char **split);
 
 void				case_ptit_piles(t_noeud **a, t_noeud **b);
 
 void				case_grand_pile(t_noeud **a, t_noeud **b);
-void				set_index(t_noeud *pile);
-
-void				ft_lis(t_noeud **a);
 
 void				push_non_list(t_noeud **a, t_noeud **b);
 t_noeud				*ft_get_petit_node(t_noeud *a);

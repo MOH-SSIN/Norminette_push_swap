@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   element_comun_2.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:01 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:29:40 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/11 09:45:30 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "commun.h"
 
 void	fr_single(char **s1, char **s2)
 {

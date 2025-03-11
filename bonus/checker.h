@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 18:16:48 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 16:06:13 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 10:03:13 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 # define CHECKER_H
 
 # include "../libft/libft.h"
-// # include "../push_swap.h"
-#include "../commun/commun.h"
+# include "../commun/commun.h"
 # include "limits.h"
 # include "stdbool.h"
 # include "stdlib.h"

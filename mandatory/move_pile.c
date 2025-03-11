@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   move_pile.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:13 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:23:44 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/11 09:44:22 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 static t_noeud	*find_cheapest(t_noeud **b)
 {

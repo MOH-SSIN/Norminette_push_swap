@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   chker_erreur.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:08:51 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/09 12:19:18 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/11 09:44:14 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 static int	verifier_syntaxe(char *str)
 {

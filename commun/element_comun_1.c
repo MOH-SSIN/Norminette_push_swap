@@ -6,11 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:42:26 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 15:42:27 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:45:27 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "commun.h"
 
 int	pile_trie(t_noeud *a)
 {

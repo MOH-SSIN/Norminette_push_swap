@@ -6,11 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 14:30:11 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/10 15:45:43 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:44:29 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	ft_push_swap(int argc, char **argv)
 {

@@ -6,11 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:08:57 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/02/15 13:44:26 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/11 09:45:25 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "commun.h"
 
 t_noeud	*lstnew(char *args, int indice)
 {

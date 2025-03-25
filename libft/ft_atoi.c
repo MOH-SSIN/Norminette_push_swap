@@ -6,12 +6,11 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:52:47 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/02/12 17:58:06 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/25 12:35:58 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdio.h"
 
 static int	ft_ft(int sign)
 {
@@ -20,9 +19,9 @@ static int	ft_ft(int sign)
 	return (0);
 }
 
-static void	ft_ptint_error(long result)
+static void	ft_ptint_error(long result, int sign)
 {
-	if (result > INT_MAX)
+	if (result > INT_MAX && INT_MIN != (result * sign))
 	{
 		write(1, "Error\n", 6);
 		exit(1);
@@ -52,7 +51,7 @@ long	ft_atoi(const char *str)
 		if (result > (LONG_MAX - (str[i] - '0')) / 10)
 			return (ft_ft(sign));
 		result = result * 10 + (str[i] - '0');
-		ft_ptint_error(result);
+		ft_ptint_error(result, sign);
 		i++;
 	}
 	return (result * sign);

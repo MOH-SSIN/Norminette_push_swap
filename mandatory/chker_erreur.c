@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:08:51 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/11 09:44:14 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/25 12:33:01 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@ static int	verifier_syntaxe(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] == ' ')
-		i++;
-	if (!str[i])
-		return (1);
 	if (str[i] == '+' || str[i] == '-')
 		i++;
 	while (str[i] != '\0')

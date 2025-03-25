@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 14:30:11 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/11 09:44:29 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/25 12:34:38 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ int	main(int argc, char **argv)
 {
 	int	i;
 
-	if (argc < 2)
-		return (0);
 	i = 0;
 	if (argc < 2)
 		return (0);

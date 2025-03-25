@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_pile.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: idahhan <idahhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:09:05 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/11 10:13:51 by idahhan          ###   ########.fr       */
+/*   Updated: 2025/03/25 08:22:37 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,23 @@ static void	set_target_node(t_noeud *a, t_noeud *b) // sup
 {
 	t_noeud	*target_node;
 	t_noeud	*current_node;
-	long	max_indx;
+	long	best_value;
 
 	while (b)
 	{
-		max_indx = LONG_MAX;
+		best_value = LONG_MAX;
 		current_node = a;
 		while (current_node)
 		{
-			if (current_node->valeur < max_indx
+			if (current_node->valeur < best_value
 				&& current_node->valeur > b->valeur)
 			{
 				target_node = current_node;
-				max_indx = current_node->valeur;
+				best_value = current_node->valeur;
 			}
 			current_node = current_node->suivant;
 		}
-		if (max_indx == LONG_MAX)
+		if (best_value == LONG_MAX)
 			b->noeud_cible = ft_get_petit_node(a);
 		else
 			b->noeud_cible = target_node;

@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:08:16 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/25 12:51:02 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/25 12:51:45 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	push(t_noeud **src, t_noeud **dest)
 	set_index(*dest);
 }
 
-voidpa(t_noeud **a, t_noeud **b, bool afch)
+void	pa(t_noeud **a, t_noeud **b, bool afch)
 {
 	push(b, a);
 	if (!afch) 

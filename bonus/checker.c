@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 18:16:51 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/25 12:34:07 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/25 16:42:53 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ int	main(int argc, char **argv)
 	a = ft_check_creat(&a, args);
 	commands = read_commands();
 	if (!commands)
-		return (1);
+		ft_error(a, b);
 	execute_commands(commands, &a, &b);
 	if (pile_trie(a) && !b)
 		write(1, "OK\n", 3);

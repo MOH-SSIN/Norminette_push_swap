@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:08:51 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/25 12:33:01 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/25 15:02:51 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,14 @@ static int	verifier_syntaxe(char *str)
 	int	i;
 
 	i = 0;
-	if (str[i] == '+' || str[i] == '-')
+	while (str[i] == ' ' || str[i] == '\t')
 		i++;
+	if (str[i] == '+' || str[i] == '-')
+	{
+		if (!ft_isdigit(str[i + 1]))
+			return (1);
+		i++;
+	}
 	while (str[i] != '\0')
 	{
 		if (!ft_isdigit(str[i]))

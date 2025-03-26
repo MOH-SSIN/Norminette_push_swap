@@ -35,7 +35,7 @@ SRCS_BONUS = bonus/checker.c bonus/cheker_utils.c bonus/ft_get_next_line_utlis.c
 OBJS = $(SRCS:.c=.o) $(SRCS_OPERATION:.c=.o)  $(SRCS_COMMUN:.c=.o)
 OBJ_BONUS = $(SRCS_BONUS:.c=.o) $(SRCS_OPERATION:.c=.o) $(SRCS_COMMUN:.c=.o)
 
-HEADER = push_swap.h ./libft/libft.h bonus/checker.h  commun/commun.h
+HEADER = mandatory/push_swap.h ./libft/libft.h bonus/checker.h  commun/commun.h
 
 all : $(NAME)
 
@@ -47,12 +47,11 @@ bonus: $(BONUS_NAME)
 $(BONUS_NAME): $(OBJ_BONUS) $(LIBFT)
 	$(CC) $(CFLAGS) $(OBJ_BONUS) $(LIBFT) -o $(BONUS_NAME)
 
-$(LIBFT): $(LIBFT_DIR)/*.c
+$(LIBFT): $(LIBFT_DIR)/*.c $(LIBFT_DIR)/*.h
 	@make -C $(LIBFT_DIR)
 
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
-
 
 clean:
 	$(RM) $(OBJS) 

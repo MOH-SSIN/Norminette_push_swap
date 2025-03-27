@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 18:16:48 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/25 16:43:45 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/27 09:04:27 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ int		ft_vide_space_bonus(char *str);
 int		verifier_syntaxe_bonus(char *str);
 int		verfier_doubl_bonus(char **str, int nbr);
 void	liberer_erreurs_bonus(char **split);
-void    ft_error(t_noeud *a, t_noeud *b);
+void	ft_error(t_noeud *a, t_noeud *b);
+
 #endif

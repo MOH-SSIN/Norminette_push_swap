@@ -6,7 +6,7 @@
 /*   By: mez-zahi <mez-zahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 18:16:31 by mez-zahi          #+#    #+#             */
-/*   Updated: 2025/03/25 16:43:20 by mez-zahi         ###   ########.fr       */
+/*   Updated: 2025/03/27 09:04:47 by mez-zahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	liberer_erreurs_bonus(char **split)
 	exit(1);
 }
 
-void ft_error(t_noeud *a, t_noeud *b)
+void	ft_error(t_noeud *a, t_noeud *b)
 {
 	if (pile_trie(a) && !b)
 		write(1, "OK\n", 3);
